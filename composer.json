@@ -1,5 +1,5 @@
 {
-    "name": "jenssegers/proxy",
+    "name": "vendor-patch/proxy",
     "description": "Proxy library that forwards requests to the desired url and returns the response.",
     "keywords": ["proxy"],
     "homepage": "https://github.com/jenssegers/php-proxy",
@@ -13,15 +13,19 @@
             "name": "Ota Mares",
             "email": "o.mares@rebuy.de",
             "homepage": "http://www.rebuy.de"
+        },
+        {
+            "name": "Frdlweb",
+            "homepage": "https://github.com/vendor-patch/php-proxy"
         }
     ],
     "require": {
-        "php": "^5.6 || ^7.0",
+        "php": ">=8.1",
         "psr/http-message": "^1.0",
-        "guzzlehttp/guzzle": "^6.0",
-        "laminas/laminas-diactoros": "^2.0",
-        "relay/relay": "^1.0",
-        "laminas/laminas-httphandlerrunner": "^1.1"
+        "guzzlehttp/guzzle": "*",
+        "laminas/laminas-diactoros": "*",
+        "relay/relay": "*",
+        "laminas/laminas-httphandlerrunner": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.0|^6.0|^7.0",
